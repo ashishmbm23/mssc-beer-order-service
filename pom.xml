@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ashish.mssc</groupId>
-	<artifactId>beer-orde-service</artifactId>
+	<artifactId>beer-order-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>beer-order-service</name>
 	<description>beer-order-service</description>
