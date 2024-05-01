@@ -1,8 +1,8 @@
 package com.ashish.mssc.beerordeservice.service;
 
 import com.ashish.mssc.beerordeservice.domain.BeerOrder;
+import com.ashish.mssc.beerordeservice.domain.BeerOrderStatusEnum;
 import com.ashish.mssc.beerordeservice.domain.Customer;
-import com.ashish.mssc.beerordeservice.domain.OrderStatusEnum;
 import com.ashish.mssc.beerordeservice.repository.BeerOrderRepository;
 import com.ashish.mssc.beerordeservice.repository.CustomerRepository;
 import com.ashish.mssc.beerordeservice.web.mapper.BeerOrderMapper;
@@ -67,7 +67,7 @@ public class BeerOrderServiceImpl implements BeerOrderService {
             BeerOrder beerOrder = beerOrderMapper.dtoToBeerOrder(beerOrderDto);
             beerOrder.setId(null); //should not be set by outside client
             beerOrder.setCustomer(customerOptional.get());
-            beerOrder.setOrderStatus(OrderStatusEnum.NEW);
+            beerOrder.setOrderStatus(BeerOrderStatusEnum.NEW);
 
             beerOrder.getBeerOrderLines().forEach(line -> line.setBeerOrder(beerOrder));
 
@@ -91,7 +91,7 @@ public class BeerOrderServiceImpl implements BeerOrderService {
     @Override
     public void pickupOrder(UUID customerId, UUID orderId) {
         BeerOrder beerOrder = getOrder(customerId, orderId);
-        beerOrder.setOrderStatus(OrderStatusEnum.PICKED_UP);
+        beerOrder.setOrderStatus(BeerOrderStatusEnum.PICKED_UP);
         beerOrderRepository.save(beerOrder);
     }
 
