@@ -1,4 +1,4 @@
-package com.ashish.mssc.beerordeservice.web.model;
+package com.ashish.common.model;
 
 public enum OrderStatusEnum {
     NEW, READY, PICKED_UP

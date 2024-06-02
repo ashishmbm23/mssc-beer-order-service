@@ -1,9 +1,9 @@
 package com.ashish.mssc.beerordeservice.web.mapper;
 
+import com.ashish.common.model.BeerDto;
+import com.ashish.common.model.BeerOrderLineDto;
 import com.ashish.mssc.beerordeservice.domain.BeerOrderLine;
 import com.ashish.mssc.beerordeservice.service.beer.BeerService;
-import com.ashish.mssc.beerordeservice.web.model.BeerDto;
-import com.ashish.mssc.beerordeservice.web.model.BeerOrderLineDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 

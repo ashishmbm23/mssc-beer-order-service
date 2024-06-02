@@ -1,4 +1,4 @@
-package com.ashish.mssc.beerordeservice.web.model;
+package com.ashish.common.model;
 
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;

@@ -1,11 +1,11 @@
 package com.ashish.mssc.beerordeservice.service;
 
+import com.ashish.common.model.BeerOrderDto;
+import com.ashish.common.model.BeerOrderLineDto;
 import com.ashish.mssc.beerordeservice.bootstrap.BeerOrderBootStrap;
 import com.ashish.mssc.beerordeservice.domain.Customer;
 import com.ashish.mssc.beerordeservice.repository.BeerOrderRepository;
 import com.ashish.mssc.beerordeservice.repository.CustomerRepository;
-import com.ashish.mssc.beerordeservice.web.model.BeerOrderDto;
-import com.ashish.mssc.beerordeservice.web.model.BeerOrderLineDto;
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;

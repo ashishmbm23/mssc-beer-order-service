@@ -1,13 +1,13 @@
 package com.ashish.mssc.beerordeservice.service;
 
+import com.ashish.common.model.BeerOrderDto;
+import com.ashish.common.model.BeerOrderPagedList;
 import com.ashish.mssc.beerordeservice.domain.BeerOrder;
 import com.ashish.mssc.beerordeservice.domain.BeerOrderStatusEnum;
 import com.ashish.mssc.beerordeservice.domain.Customer;
 import com.ashish.mssc.beerordeservice.repository.BeerOrderRepository;
 import com.ashish.mssc.beerordeservice.repository.CustomerRepository;
 import com.ashish.mssc.beerordeservice.web.mapper.BeerOrderMapper;
-import com.ashish.mssc.beerordeservice.web.model.BeerOrderDto;
-import com.ashish.mssc.beerordeservice.web.model.BeerOrderPagedList;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

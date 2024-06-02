@@ -1,8 +1,8 @@
 package com.ashish.mssc.beerordeservice.web.controller;
 
+import com.ashish.common.model.BeerOrderDto;
+import com.ashish.common.model.BeerOrderPagedList;
 import com.ashish.mssc.beerordeservice.service.BeerOrderService;
-import com.ashish.mssc.beerordeservice.web.model.BeerOrderDto;
-import com.ashish.mssc.beerordeservice.web.model.BeerOrderPagedList;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

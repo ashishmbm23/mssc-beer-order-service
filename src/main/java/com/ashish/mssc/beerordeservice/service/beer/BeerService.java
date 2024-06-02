@@ -1,6 +1,6 @@
 package com.ashish.mssc.beerordeservice.service.beer;
 
-import com.ashish.mssc.beerordeservice.web.model.BeerDto;
+import com.ashish.common.model.BeerDto;
 
 import java.util.Optional;
 

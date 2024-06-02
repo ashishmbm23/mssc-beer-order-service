@@ -1,7 +1,7 @@
 package com.ashish.mssc.beerordeservice.service;
 
-import com.ashish.mssc.beerordeservice.web.model.BeerOrderDto;
-import com.ashish.mssc.beerordeservice.web.model.BeerOrderPagedList;
+import com.ashish.common.model.BeerOrderDto;
+import com.ashish.common.model.BeerOrderPagedList;
 import org.springframework.data.domain.Pageable;
 
 import java.util.UUID;
