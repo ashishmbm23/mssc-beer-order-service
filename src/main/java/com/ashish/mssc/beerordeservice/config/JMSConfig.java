@@ -10,6 +10,8 @@ import org.springframework.jms.support.converter.MessageType;
 @Configuration
 public class JMSConfig {
     public final String SFG_BEER_ORDER_QUEUE="sfg-beer-order-queue";
+    public static final String VALIDATE_ORDER_QUEUE="validate-order-queue";
+
 
     @Bean
     public MessageConverter messageConverter(ObjectMapper objectMapper){
